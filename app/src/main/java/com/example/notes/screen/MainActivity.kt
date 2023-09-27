@@ -55,10 +55,10 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this@MainActivity, "Note Added", Toast.LENGTH_LONG).show()
                     /*db.collection("user").document("notes").get().addOnSuccessListener {}*/
 
-                        for (document in it.collection() ){
+                        /*for (document in it.collection() ){
                             val notes = document(notesModel::class.java)
                             arrNotes.add(notes!!)
-                        }
+                        }*/
                         dialog.dismiss()
                 }
                     .addOnFailureListener {
